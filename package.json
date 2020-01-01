@@ -1,0 +1,19 @@
+{
+    "name": "vscode-algebraic-effects-js",
+    "displayName": "vscode-algebraic-effects-js",
+    "description": "adds syntax highlighting algebraic effects",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [{
+            "path": "./syntaxes/javascript.tmLanguage.json",
+            "scopeName": "source.effects.injection",
+            "injectTo": ["source.js"]
+        }]
+    }
+}

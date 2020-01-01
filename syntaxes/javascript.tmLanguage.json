@@ -1,0 +1,19 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "javascript-effects",
+	"injectionSelector": "L:source.js",
+	"patterns": [
+		{
+			"include": "#unarykeywords"
+		}
+	],
+	"repository": {
+		"unarykeywords": {
+			"patterns": [{
+				"name": "keyword.operator",
+				"match": "\\s(handle|recall|perform)\\s"
+			}]
+		}
+	},
+	"scopeName": "source.effects.injection"
+}
